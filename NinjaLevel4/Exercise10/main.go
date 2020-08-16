@@ -16,4 +16,8 @@ func main() {
 			fmt.Printf("Likes: %v\n", v)
 		}
 	}
+
+	delete(mappy, "Delete")
+
+	fmt.Println("\n", mappy) //"Delete" record is missing as expected.
 }
