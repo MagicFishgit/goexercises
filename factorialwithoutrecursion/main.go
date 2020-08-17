@@ -14,9 +14,11 @@ func factorial(num int) int {
 	for i := 0; i < num; i++ {
 
 		if count != 0 {
-			sum = sum * count
+			sum *= count
 			count--
 		}
 	}
 	return sum
 }
+
+//challenge from Todd to do a factorial without using recursion and using loops.
