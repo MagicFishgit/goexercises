@@ -7,8 +7,7 @@ type circle struct {
 }
 
 type square struct {
-	len   float64
-	width float64
+	len float64
 }
 
 type shape interface {
@@ -19,12 +18,11 @@ func main() {
 
 	//value of square
 	squareval := square{
-		len:   10,
-		width: 2,
+		len: 15,
 	}
 
 	circleval := circle{
-		radius: 2,
+		radius: 12.345,
 	}
 
 	//print info square
@@ -35,12 +33,12 @@ func main() {
 
 //Area method for square
 func (sqr square) area() float64 {
-	return sqr.len * sqr.width
+	return sqr.len * sqr.len
 }
 
 //Area method for circle
 func (circ circle) area() float64 {
-	return math.Pi * math.Sqrt(circ.radius)
+	return math.Pi * (circ.radius * circ.radius)
 }
 
 //prints area from shape
