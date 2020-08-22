@@ -12,12 +12,14 @@ type user struct {
 	Sayings []string
 }
 
+//ByAge hmmm interesting.
 type ByAge []user
 
 func (a ByAge) Len() int           { return len(a) }
 func (a ByAge) Swap(i, j int)      { a[i], a[j] = a[j], a[i] }
 func (a ByAge) Less(i, j int) bool { return a[i].Age < a[j].Age }
 
+//ByLast testing this comment thingy
 type ByLast []user
 
 func (l ByLast) Len() int           { return len(l) }
